@@ -1,0 +1,8 @@
+## Interface: 11304
+## Title: LootToChat
+## Author: Treng
+## Version: 1.0.0
+## SavedVariables: LOOT_TO_CHAT_SETTINGS
+
+LootToChat.lua
+
