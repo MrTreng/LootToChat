@@ -31,10 +31,10 @@ local function LootToChat()
 
       if itemLink and quality and quality >= LOOT_TO_CHAT_SETTINGS.threshold then
         numLink = numLink + 1
-        if UnitInRaid("unit") == nil then
-          SendChatMessage(numLink..": "..itemLink, "PARTY")
-        else
+        if IsInRaid() then
           SendChatMessage(numLink..": "..itemLink, "RAID")
+        else
+          SendChatMessage(numLink..": "..itemLink, "PARTY")
         end
       end
     end
